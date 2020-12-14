@@ -1,0 +1,25 @@
+{
+  "name": "mern-password-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/E2050-FARUK/mern-password-generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/E2050-FARUK/mern-password-generator/issues"
+  },
+  "homepage": "https://github.com/E2050-FARUK/mern-password-generator#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "password-generator": "^2.3.2"
+  }
+}
