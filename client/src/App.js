@@ -10,7 +10,7 @@ function App() {
    fetch("/api/passwords")
       .then((res) => res.json())
       .then((data) => setPassword(data));
-};  
+  };  
   useEffect(() => {
     fetch("/api/passwords")
       .then((res) => res.json())
@@ -22,8 +22,8 @@ function App() {
       {/* Render the passwords if we have them */}
       {password.length ? (
         <div>
-          <h1>5 Passwords.</h1>
-          <ul className="passwords">
+          <h1>Your First 5 Passwords</h1>
+          <ol className="passwords">
             {/*
                 Generally it's bad to use "index" as a key.
                 It's ok for this example because there will always
@@ -33,7 +33,7 @@ function App() {
             {password.map((password, index) => (
               <li key={index}>{password}</li>
             ))}
-          </ul>
+          </ol>
           <button className="more" onClick={getPasswords}>
             Get More
           </button>
@@ -41,7 +41,7 @@ function App() {
       ) : (
         // Render a helpful message otherwise
         <div>
-          <h1>No passwords :(</h1>
+          <h1>No passwords ☹ </h1>
           <button className="more" onClick={getPasswords}>
             Try Again?
           </button>

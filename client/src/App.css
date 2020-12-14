@@ -1,16 +1,30 @@
+* {
+  background-color: #f8dc5d;
+  
+}
 .App {
+  
   text-align: center;
   font-family: "Courier New", monospace;
-  width: 100%;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  
 }
 
 h1 {
   font-weight: normal;
   font-size: 42px;
+  border-radius: 5px ;
+  background-color: aqua;
+  width: 70%;
+  margin: auto;
+  margin-top: 2em;
+  border: 2px solid #000;
 }
 
 .passwords {
-  list-style: none;
+  list-style-position: inside;
   padding: 0;
   font-size: 32px;
   margin-bottom: 2em;
@@ -19,9 +33,12 @@ h1 {
 .more {
   font-size: 32px;
   font-family: "Courier New", monospace;
+  font-weight: bold;
   border: 2px solid #000;
   background-color: #fff;
   padding: 10px 25px;
+  background-color: rgb(8, 100, 238);
+  border-radius: 5px;
 }
 .more:hover {
   background-color: #FDD836;
